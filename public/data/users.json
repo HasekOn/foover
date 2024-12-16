@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phoneNumber": "123-456-7890",
+      "password": "password123",
+      "image": "/photo/profile1.png",
+      "role": "editor"
+    },
+    {
+      "id": 2,
+      "firstName": "Jaden",
+      "lastName": "Smith",
+      "email": "administer@example.com",
+      "phoneNumber": "098-765-4321",
+      "password": "secret",
+      "image": "/photo/profile2.png",
+      "role": "editor"
+    },
+    {
+      "id": 3,
+      "firstName": "Ondra",
+      "lastName": "Hasek",
+      "email": "hasekon@seznam.cz",
+      "phoneNumber": "789456123",
+      "password": "secret",
+      "image": "/photo/ind.png",
+      "role": "administrator"
+    }
+  ]
+  

@@ -1,0 +1,169 @@
+[
+    {
+        "id": 1,
+        "image": "/photo/potatoes.png",
+        "title": "Potato Snack",
+        "description": "A delicious and crispy potato snack perfect for any occasion.",
+        "cookingTime": "10 mins",
+        "servings": 2,
+        "difficulty": "easy",
+        "ingredients": ["150g bacon", "4 cloves of garlic", "200g potatoes", "30g ricotta cheese", "20g salt"],
+        "instructions": [
+            "Cook the bacon in a pan until crispy.",
+            "Peel and chop the garlic.",
+            "Boil the potatoes until soft.",
+            "Mix the potatoes with ricotta cheese and salt.",
+            "Serve the potato mixture with crispy bacon on top."
+        ]
+    },
+    {
+        "id": 2,
+        "image": "/photo/pie.png",
+        "title": "Apple Pie",
+        "description": "A classic apple pie with a flaky crust and juicy apple filling.",
+        "cookingTime": "45 mins",
+        "servings": 8,
+        "difficulty": "medium",
+        "ingredients": ["1 pie crust", "6 apples", "100g sugar", "1 tsp cinnamon", "1 tbsp lemon juice", "1 egg"],
+        "instructions": [
+            "Preheat the oven to 180°C.",
+            "Peel and slice the apples.",
+            "Mix the apples with sugar, cinnamon, and lemon juice.",
+            "Fill the pie crust with the apple mixture.",
+            "Cover with the top crust and brush with beaten egg.",
+            "Bake for 45 minutes or until golden brown."
+        ],
+        "createdByUserId": 1
+    },
+    {
+        "id": 3,
+        "image": "/photo/spagety.png",
+        "title": "Spaghetti Bolognese",
+        "description": "A rich and hearty spaghetti bolognese with a flavorful meat sauce.",
+        "cookingTime": "30 mins",
+        "servings": 4,
+        "difficulty": "easy",
+        "ingredients": ["200g spaghetti", "500g minced beef", "1 onion", "2 cloves of garlic", "400g canned tomatoes", "50g parmesan cheese"],
+        "instructions": [
+            "Cook the spaghetti according to package instructions.",
+            "In a pan, sauté the minced beef until browned.",
+            "Chop the onion and garlic and add to the pan.",
+            "Add the canned tomatoes and simmer for 20 minutes.",
+            "Serve the sauce over the spaghetti and top with grated parmesan cheese."
+        ],
+        "createdByUserId": 2
+    },
+    {
+        "id": 4,
+        "image": "/photo/curry.png",
+        "title": "Chicken Curry",
+        "description": "A spicy and creamy chicken curry with a blend of aromatic spices.",
+        "cookingTime": "40 mins",
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": ["500g chicken breast", "1 onion", "2 cloves of garlic", "1 tbsp curry powder", "400ml coconut milk", "200g rice"],
+        "instructions": [
+            "Cook the rice according to package instructions.",
+            "In a pan, sauté the chopped onion and garlic until soft.",
+            "Add the curry powder and chicken pieces and cook until browned.",
+            "Pour in the coconut milk and simmer for 20 minutes.",
+            "Serve the curry over the cooked rice."
+        ],
+        "createdByUserId": 3
+    },
+    {
+        "id": 5,
+        "image": "/photo/stir.png",
+        "title": "Vegetable Stir Fry",
+        "description": "A quick and healthy vegetable stir fry with a mix of colorful veggies.",
+        "cookingTime": "15 mins",
+        "servings": 2,
+        "difficulty": "easy",
+        "ingredients": ["1 bell pepper", "1 carrot", "100g broccoli", "50g snap peas", "2 tbsp soy sauce", "1 tbsp sesame oil"],
+        "instructions": [
+            "Chop all the vegetables into bite-sized pieces.",
+            "Heat the sesame oil in a pan and add the vegetables.",
+            "Stir fry the vegetables for 5-7 minutes.",
+            "Add the soy sauce and cook for another 2 minutes.",
+            "Serve immediately."
+        ]
+    },
+    { "id": 6, 
+    "image": "/photo/sprouts.png", 
+    "title": "Brussels Sprouts", 
+    "description": "Cheesy Brussels sprouts, packed into a chestnut pastry and topped with crunchy almond breadcrumbs.", 
+    "cookingTime": "30 mins", 
+    "servings": 4, 
+    "difficulty": "medium", 
+    "ingredients": [
+        "500g Brussels sprouts",
+         "1 cup chestnut pastry", 
+         "1 cup breadcrumbs", 
+         "50g almonds", 
+         "1 cup grated cheese"
+         ], 
+    "instructions": [ 
+            "Preheat the oven to 180°C.", 
+            "Blanch the Brussels sprouts in boiling water for 5 minutes.", 
+            "Mix the Brussels sprouts with chestnut pastry and grated cheese.", 
+            "Top with breadcrumbs and almonds.", 
+            "Bake for 20 minutes or until the top is golden and crispy." 
+            ] 
+    },
+    { "id": 7, 
+    "image": "/photo/pancakes.png", 
+    "title": "Fluffy Pancakes", 
+    "description": "Light and fluffy pancakes perfect for a delicious breakfast.", 
+    "cookingTime": "15 mins", 
+    "servings": 4, 
+    "difficulty": "easy", 
+    "ingredients": [
+        "1 cup flour", 
+        "1 tbsp sugar", 
+        "1 cup milk", 
+        "1 egg", 
+        "2 tbsp melted butter", 
+        "1 tsp baking powder"
+    ], 
+    "instructions": [ 
+        "Mix the flour, sugar, and baking powder in a bowl.", 
+        "In another bowl, whisk together the milk, egg, and melted butter.", 
+        "Combine the wet and dry ingredients until smooth.", 
+        "Heat a non-stick pan and pour in the batter to form pancakes.", 
+        "Cook until bubbles form on the surface, then flip and cook until golden." ]
+    },
+    {
+        "id": 8,
+        "image": "/photo/donuts.png",
+        "title": "Delicious Donuts",
+        "description": "Fluffy, sweet, and perfectly glazed donuts. A treat for any occasion!",
+        "cookingTime": "1 hr",
+        "servings": 12,
+        "difficulty": "medium",
+        "ingredients": [
+            "2 1/2 cups all-purpose flour",
+            "1/2 cup granulated sugar",
+            "2 1/4 tsp active dry yeast",
+            "1/2 tsp salt",
+            "1/2 cup whole milk",
+            "1/4 cup water",
+            "2 tbsp unsalted butter",
+            "1 egg",
+            "1/2 tsp vanilla extract",
+            "Oil for frying",
+            "1 cup powdered sugar",
+            "2-3 tbsp milk (for glaze)",
+            "1/2 tsp vanilla extract (for glaze)"
+        ],
+        "instructions": [
+            "In a large bowl, combine 1 cup of flour, sugar, yeast, and salt. Set aside.",
+            "In a small saucepan, heat milk, water, and butter until warm (110-115°F). Add to the flour mixture along with the egg and vanilla extract. Beat until smooth.",
+            "Gradually stir in remaining flour until a soft dough forms. Knead on a floured surface until smooth and elastic, about 5-7 minutes.",
+            "Place the dough in a greased bowl, cover, and let rise in a warm place until doubled, about 1 hour.",
+            "Punch down the dough and roll out to 1/2-inch thickness. Cut with a donut cutter or round cookie cutter. Re-roll scraps and cut more donuts.",
+            "Heat oil in a deep fryer or large saucepan to 375°F (190°C). Fry donuts, a few at a time, until golden brown, about 1 minute per side. Drain on paper towels.",
+            "For the glaze, combine powdered sugar, milk, and vanilla extract in a bowl. Dip warm donuts in the glaze and place on a wire rack to set."
+        ]
+    }
+    
+]
