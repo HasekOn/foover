@@ -48,8 +48,8 @@ const UserPage = ({ user }) => {
   return (
     <div className="user-page-container p-4 w-full h-full">
       {/* První div: Jméno a tlačítko pro odhlášení */}
-      <div className="flex justify-between items-center mb-20 gap-10">
-        <div className="flex items-center gap-10">
+      <div className="flex flex-col sm:flex-row justify-between items-center mb-20 gap-4 sm:gap-10">
+        <div className="flex items-center gap-4 sm:gap-10">
           <Link to="/main" className="text-2xl font-bold text-teal-600 mr-4 hover:text-teal-800">
             <FontAwesomeIcon icon={faArrowLeft} />
           </Link>
@@ -71,11 +71,11 @@ const UserPage = ({ user }) => {
       </div>
 
       {/* Druhý div: Profilová fotka a údaje, přepínač rolí, oblíbené recepty */}
-      <div className="flex flex-row justify-evenly w-full gap-x-4">
+      <div className="flex flex-col lg:flex-row justify-evenly w-full gap-4">
         {/* Profilová fotka a údaje */}
-        <div className="flex flex-col items-center p-4 w-full max-w-sm ">
+        <div className="flex flex-col items-center p-4 w-full max-w-sm">
           <label className="block font-bold text-gray-300 text-2xl">PROFILE IMAGE</label>
-          <img src={user.image} alt="User Profile" className="w-320 h-320 mb-4" />
+          <img src={user.image} alt="User Profile" className="w-[320px] h-[320px] mb-4" />
           <label className="block font-bold text-gray-300 text-2xl">USER DETAILS</label>
           <div className="text-left space-y-2 w-full">
             <div className="bg-gray-200 p-2 rounded">
@@ -98,22 +98,24 @@ const UserPage = ({ user }) => {
         </div>
 
         {/* Oblíbené recepty */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center w-full">
           <label className="block font-bold text-gray-300 text-2xl">Created Recipes</label>
           {recipes.length === 0 ? (
             <p>Create your first one...</p>
           ) : (
-            recipes.map((recipe, index) => (
-              <div className="flex space-x-4" style={{ maxWidth: '100%' }}>
-            <Link to={`/single-recipe/${recipe.id}`} key={index} className="transform transition-transform duration-300 hover:scale-105">
-              <SmallRecipe
-                image={recipe.image}
-                title={recipe.title}
-                time={recipe.time}
-              />
-            </Link>
-        </div>
-            ))
+            <div className="flex flex-wrap justify-center items-center">
+              {recipes.map((recipe, index) => (
+                <div key={index} className="flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2">
+                  <Link to={`/single-recipe/${recipe.id}`} className="block transform transition-transform duration-300 hover:scale-105">
+                    <SmallRecipe
+                      image={recipe.image}
+                      title={recipe.title}
+                      time={recipe.time}
+                    />
+                  </Link>
+                </div>
+              ))}
+            </div>
           )}
           <button
             onClick={handlePlusClick}

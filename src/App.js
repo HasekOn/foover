@@ -57,19 +57,21 @@ function MainPage({ recipes, user, onSearch, searchResults }) {
     <>
       <Navbar user={user} onSearch={onSearch} />
       {shouldShowResults && (
-        <div className="search-results flex flex-wrap justify-center">
-          {searchResults.map((recipe, index) => (
-            <div key={index} className="flex-none w-1/5 p-2">
-              <Link to={`/single-recipe/${recipe.id}`} className="block transform transition-transform duration-300 hover:scale-105">
-                <SmallRecipe
-                  image={recipe.image}
-                  title={recipe.title}
-                  time={recipe.time}
-                />
-              </Link>
-            </div>
-          ))}
-        </div>
+        <div className="search-results flex flex-wrap justify-center items-center">
+        {searchResults.map((recipe, index) => (
+          <div key={index} className="flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2">
+            <Link to={`/single-recipe/${recipe.id}`} className="block transform transition-transform duration-300 hover:scale-105">
+              <SmallRecipe
+                image={recipe.image}
+                title={recipe.title}
+                time={recipe.time}
+              />
+            </Link>
+          </div>
+        ))}
+      </div>
+      
+      
       )}
       <WelcomeImage />
       <PopularRecipes recipes={recipes} />

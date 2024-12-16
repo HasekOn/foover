@@ -25,14 +25,14 @@ const PopularRecipes = ({ recipes }) => {
         {currentIndex > 0 && (
           <button
             onClick={scrollLeft}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-teal-700 hover:bg-teal-900 text-white p-2 rounded-full shadow-md hover:scale-110 transition-transform duration-300 ease-in-out"
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-teal-700 hover:bg-teal-900 text-white p-2 rounded-full shadow-md hover:scale-110 transition-transform duration-300 ease-in-out hidden sm:block"
           >
             <FontAwesomeIcon icon={faArrowLeft} />
           </button>
         )}
-        <div className="flex space-x-4" style={{ maxWidth: '100%' }}>
+        <div className="flex space-x-2 overflow-x-auto" style={{ maxWidth: '100%' }}>
           {visibleRecipes.map((recipe, index) => (
-            <Link to={`/single-recipe/${recipe.id}`} key={index} className="transform transition-transform duration-300 hover:scale-105">
+            <Link to={`/single-recipe/${recipe.id}`} key={index} className="flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/5 transform transition-transform duration-300 hover:scale-105">
               <SmallRecipe
                 image={recipe.image}
                 title={recipe.title}
@@ -44,7 +44,7 @@ const PopularRecipes = ({ recipes }) => {
         {currentIndex + maxVisibleRecipes < recipes.length && (
           <button
             onClick={scrollRight}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-teal-700 hover:bg-teal-900 text-white p-2 rounded-full shadow-md hover:scale-110 transition-transform duration-300 ease-in-out"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-teal-700 hover:bg-teal-900 text-white p-2 rounded-full shadow-md hover:scale-110 transition-transform duration-300 ease-in-out hidden sm:block"
           >
             <FontAwesomeIcon icon={faArrowRight} />
           </button>
